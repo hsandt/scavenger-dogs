@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: SPRATL_CharacterAndItems
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 0
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 256
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 95d8a6c7401e51bc9b6e8666587aac6a, type: 3}
+    totalSpriteSurfaceArea: 2304
+    bindAsDefault: 1
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 588d5c14bf0c841be82b3d8fb4361c4f, type: 3}
+  - {fileID: 21300000, guid: 1cc67094ff78f45a69bf2e11fc8e1eba, type: 3}
+  - {fileID: 21300000, guid: 70ef29fa1af2f4249b61c8a697447619, type: 3}
+  - {fileID: 21300000, guid: 55466f2cc18a1439cb198321a82226cc, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - SPR_Avatar_Green
+  - SPR_Avatar_Red
+  - SPR_Avatar_Yellow
+  - SPR_Avatar_Blue
+  m_Tag: SPRATL_CharacterAndItems
+  m_IsVariant: 0
