@@ -1,4 +1,4 @@
-// GENERATED AUTOMATICALLY FROM 'Assets/Input/InputActionsCharacter.inputactions'
+// GENERATED AUTOMATICALLY FROM 'Assets/Input/CharacterControls.inputactions'
 
 using System;
 using System.Collections;
@@ -6,13 +6,13 @@ using System.Collections.Generic;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.Utilities;
 
-public class @InputActionsCharacter : IInputActionCollection, IDisposable
+public class @CharacterControls : IInputActionCollection, IDisposable
 {
     public InputActionAsset asset { get; }
-    public @InputActionsCharacter()
+    public @CharacterControls()
     {
         asset = InputActionAsset.FromJson(@"{
-    ""name"": ""InputActionsCharacter"",
+    ""name"": ""CharacterControls"",
     ""maps"": [
         {
             ""name"": ""Player"",
@@ -905,8 +905,8 @@ public class @InputActionsCharacter : IInputActionCollection, IDisposable
     private readonly InputAction m_Player_Fire;
     public struct PlayerActions
     {
-        private @InputActionsCharacter m_Wrapper;
-        public PlayerActions(@InputActionsCharacter wrapper) { m_Wrapper = wrapper; }
+        private @CharacterControls m_Wrapper;
+        public PlayerActions(@CharacterControls wrapper) { m_Wrapper = wrapper; }
         public InputAction @Move => m_Wrapper.m_Player_Move;
         public InputAction @Look => m_Wrapper.m_Player_Look;
         public InputAction @Fire => m_Wrapper.m_Player_Fire;
@@ -962,8 +962,8 @@ public class @InputActionsCharacter : IInputActionCollection, IDisposable
     private readonly InputAction m_UI_TrackedDeviceSelect;
     public struct UIActions
     {
-        private @InputActionsCharacter m_Wrapper;
-        public UIActions(@InputActionsCharacter wrapper) { m_Wrapper = wrapper; }
+        private @CharacterControls m_Wrapper;
+        public UIActions(@CharacterControls wrapper) { m_Wrapper = wrapper; }
         public InputAction @Navigate => m_Wrapper.m_UI_Navigate;
         public InputAction @Submit => m_Wrapper.m_UI_Submit;
         public InputAction @Cancel => m_Wrapper.m_UI_Cancel;
