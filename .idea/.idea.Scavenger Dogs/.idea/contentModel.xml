@@ -10,8 +10,13 @@
           <e p="CharacterControls.cs" t="Include" />
         </e>
         <e p="Scripts" t="Include">
-          <e p="CharacterControl.cs" t="Include" />
-          <e p="CharacterMotor.cs" t="Include" />
+          <e p="Character" t="Include">
+            <e p="CharacterControl.cs" t="Include" />
+            <e p="CharacterMotor.cs" t="Include" />
+          </e>
+          <e p="Input" t="Include">
+            <e p="BinaryCardinalProcessor.cs" t="Include" />
+          </e>
         </e>
       </e>
       <e p="CommonsDebug.Editor.csproj" t="IncludeRecursive" />
