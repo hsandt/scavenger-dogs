@@ -23,8 +23,7 @@ public class CharacterMotor : MonoBehaviour
 
 	void FixedUpdate ()
 	{
-		Vector2 moveUnitVector = characterControl.moveIntentionVector.normalized;
-		Vector2 moveVelocity = moveUnitVector * speed;
-		rigidbody2d.velocity = moveVelocity;
+		// we assume move intention coordinates are 0/1 are in old school games using D-pad
+		rigidbody2d.velocity = speed * characterControl.moveIntention;
 	}
 }
