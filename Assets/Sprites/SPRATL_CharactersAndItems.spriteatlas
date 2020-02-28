@@ -6,7 +6,7 @@ SpriteAtlas:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: SPRATL_CharacterAndItems
+  m_Name: SPRATL_CharactersAndItems
   m_EditorData:
     serializedVersion: 2
     textureSettings:
@@ -52,9 +52,9 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 70ef29fa1af2f4249b61c8a697447619, type: 3}
   - {fileID: 21300000, guid: 55466f2cc18a1439cb198321a82226cc, type: 3}
   m_PackedSpriteNamesToIndex:
-  - SPR_Avatar_Green
-  - SPR_Avatar_Red
-  - SPR_Avatar_Yellow
-  - SPR_Avatar_Blue
-  m_Tag: SPRATL_CharacterAndItems
+  - SPR_Character_Green_v1
+  - SPR_Character_Red_v1
+  - SPR_Character_Yellow_v1
+  - SPR_Character_Blue_v1
+  m_Tag: SPRATL_CharactersAndItems
   m_IsVariant: 0
