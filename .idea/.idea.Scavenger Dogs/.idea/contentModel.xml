@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="$USER_HOME$/.Rider2019.3/system/extResources" t="IncludeRecursive" />
-    <e p="$USER_HOME$/.Rider2019.3/system/resharper-host/local/Transient/ReSharperHost/v193/SolutionCaches/_Scavenger Dogs.-1777167433.00" t="ExcludeRecursive" />
+    <e p="$USER_HOME$/.Rider2018.3/system/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/.Rider2018.3/system/resharper-host/local/Transient/ReSharperHost/v183/SolutionCaches/_Scavenger Dogs.-1777167433.00" t="ExcludeRecursive" />
     <e p="$PROJECT_DIR$" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="Editor" t="Include">
+          <e p="Linux" t="Include">
+            <e p="EditorLinux.asmdef" t="Include" />
+            <e p="MySysroot.cs" t="Include" />
+          </e>
+        </e>
         <e p="Input" t="Include">
           <e p="CharacterControls.cs" t="Include" />
         </e>
@@ -26,11 +32,14 @@
       <e p="CommonsHelper.Tests.csproj" t="IncludeRecursive" />
       <e p="CommonsHelper.csproj" t="IncludeRecursive" />
       <e p="CommonsPattern.csproj" t="IncludeRecursive" />
+      <e p="EditorLinux.csproj" t="IncludeRecursive" />
+      <e p="Library" t="ExcludeRecursive" />
       <e p="Packages" t="Include">
         <e p="CommonsDebug" t="Include">
           <e p="Assert.cs" t="Include" />
           <e p="CodeTuning.cs" t="Include" />
           <e p="CodeTuningGUI.cs" t="Include" />
+          <e p="CommonsDebug.asmdef" t="Include" />
           <e p="DebugLabelManager.cs" t="Include" />
           <e p="DebugScreen.cs" t="Include" />
           <e p="DebugScreenManager.cs" t="Include" />
@@ -42,6 +51,7 @@
           <e p="EditPolygonCollider2D.cs" t="Include" />
           <e p="Editor" t="Include">
             <e p="CodeTuningEditorWindow.cs" t="Include" />
+            <e p="CommonsDebug.Editor.asmdef" t="Include" />
             <e p="EditEdgeCollider2DEditor.cs" t="Include" />
             <e p="EditPolygonCollider2DEditor.cs" t="Include" />
             <e p="ShowWorldPosition.cs" t="Include" />
@@ -55,6 +65,7 @@
           <e p="AssetsUtil.cs" t="Include" />
           <e p="AutoSnap.cs" t="Include" />
           <e p="BuiltInResourcesWindow.cs" t="Include" />
+          <e p="CommonsEditor.asmdef" t="Include" />
           <e p="EditorAssets.cs" t="Include" />
           <e p="EditorCamera.cs" t="Include" />
           <e p="EditorConsole.cs" t="Include" />
@@ -94,6 +105,7 @@
           <e p="Classes" t="Include">
             <e p="Timer.cs" t="Include" />
           </e>
+          <e p="CommonsHelper.asmdef" t="Include" />
           <e p="Comparer" t="Include">
             <e p="VectorDeltaComparer.cs" t="Include" />
           </e>
@@ -114,6 +126,7 @@
               <e p="BuildDataEditor.cs" t="Include" />
               <e p="UpdateBuildVersionEditor.cs" t="Include" />
             </e>
+            <e p="CommonsHelper.Editor.asmdef" t="Include" />
             <e p="Curves2D" t="Include">
               <e p="BezierPath2DComponentEditor.cs" t="Include" />
             </e>
@@ -144,6 +157,7 @@
           <e p="Tests" t="Include">
             <e p="AnimationCurveUtilTests.cs" t="Include" />
             <e p="BezierPath2DTests.cs" t="Include" />
+            <e p="CommonsHelper.Tests.asmdef" t="Include" />
             <e p="DirectionTests.cs" t="Include" />
             <e p="RectUtilTests.cs" t="Include" />
             <e p="VectorUtilTests.cs" t="Include" />
@@ -169,6 +183,7 @@
           </e>
         </e>
         <e p="CommonsPattern" t="Include">
+          <e p="CommonsPattern.asmdef" t="Include" />
           <e p="FSM" t="Include">
             <e p="FSMMachine.cs" t="Include" />
             <e p="FSMState.cs" t="Include" />
@@ -188,7 +203,9 @@
         </e>
       </e>
       <e p="Scavenger Dogs.sln" t="IncludeFlat" />
-      <e p="Temp/bin" t="ExcludeRecursive" />
+      <e p="Temp" t="ExcludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+      </e>
       <e p="obj" t="ExcludeRecursive" />
       <e p="packages" t="ExcludeRecursive" />
     </e>
