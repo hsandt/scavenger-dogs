@@ -9,13 +9,15 @@ public class BinaryCardinalProcessor : InputProcessor<Vector2>
 {
     /// <summary>
     /// Value at which the lower bound starts.
+    /// Only useful if bigger than Default Deadzone Min in Input System Package settings.
     /// </summary>
     /// <remarks>
     /// Values in the input below min, in absolute value, will get dropped, and values
     /// at or above will be replaced with -1 or 1 (keeping the same sign as the original value).
     /// This is useful to convert stick input into D-pad-like input.
     /// </remarks>
-    [Tooltip("Test")]
+    [Tooltip("Value at which the lower bound starts. " +
+             "Only useful if bigger than Default Deadzone Min in Input System Package settings.")]
     public float min = 0.125f;
     
 #if UNITY_EDITOR
