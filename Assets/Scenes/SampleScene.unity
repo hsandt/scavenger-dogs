@@ -171,7 +171,7 @@ MonoBehaviour:
       m_Interactions: 
       m_SingletonActionBindings: []
     m_Reference: {fileID: 0}
-  m_PlayerPrefab: {fileID: 7886186327440940012, guid: aba4a5ca50c0cc4b2b3229a5903a784d,
+  m_PlayerPrefab: {fileID: 3621946673153856395, guid: aaee139b38fbb6045898625b19e6bbf8,
     type: 3}
   m_SplitScreen: 0
   m_MaintainAspectRatioInSplitScreen: 0
@@ -2308,7 +2308,7 @@ PrefabInstance:
     - target: {fileID: 7888094182729814140, guid: 7e28c28691d05161d872799bd047fdf6,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7888094182729814141, guid: 7e28c28691d05161d872799bd047fdf6,
         type: 3}
@@ -2437,7 +2437,7 @@ PrefabInstance:
     - target: {fileID: 3621946673153856395, guid: aaee139b38fbb6045898625b19e6bbf8,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aaee139b38fbb6045898625b19e6bbf8, type: 3}
@@ -2511,7 +2511,7 @@ PrefabInstance:
     - target: {fileID: 8308106648636027703, guid: d5c8557710021c734bc1a4fc5a2c44ad,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d5c8557710021c734bc1a4fc5a2c44ad, type: 3}
@@ -2530,7 +2530,7 @@ PrefabInstance:
     - target: {fileID: 3114661096904899112, guid: 98874574e3567a1aeba90adb7d462b9c,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3114661096904899113, guid: 98874574e3567a1aeba90adb7d462b9c,
         type: 3}

@@ -138,7 +138,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Actions: {fileID: -944628639613478452, guid: e34a9bddb609985668ec2adc0afafffb,
     type: 3}
-  m_NotificationBehavior: 3
+  m_NotificationBehavior: 0
   m_UIInputModule: {fileID: 0}
   m_DeviceLostEvent:
     m_PersistentCalls:
@@ -260,38 +260,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0840fbde4bf0681c69a86c7933d80565, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  testAction:
-    m_Name: Test
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 8f143449-85be-4f7b-95ef-a6cbd185cfdf
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 1D Axis
-      m_Id: 8281a1d6-4979-428f-9973-301eeba0cfcd
-      m_Path: 1DAxis
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Test
-      m_Flags: 4
-    - m_Name: Negative
-      m_Id: 037376e1-c5e3-4852-9fb0-2bc87682cbdc
-      m_Path: 
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Test
-      m_Flags: 8
-    - m_Name: Positive
-      m_Id: 87904a15-c9df-46c6-bdee-9451151d0ed4
-      m_Path: <Gamepad>/buttonNorth
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Test
-      m_Flags: 8
 --- !u!114 &7886186327440939986
 MonoBehaviour:
   m_ObjectHideFlags: 0
