@@ -18,7 +18,11 @@
         <e p="Scripts" t="Include">
           <e p="Character" t="Include">
             <e p="CharacterControl.cs" t="Include" />
+            <e p="CharacterMaster.cs" t="Include" />
             <e p="CharacterMotor.cs" t="Include" />
+          </e>
+          <e p="Enums" t="Include">
+            <e p="GameColor.cs" t="Include" />
           </e>
           <e p="Input" t="Include">
             <e p="BinaryCardinalProcessor.cs" t="Include" />

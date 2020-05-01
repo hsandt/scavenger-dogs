@@ -13,7 +13,7 @@ public class CharacterMotor : MonoBehaviour
 	
 	/* Parameters */
 	[SerializeField, Tooltip("Character speed")]
-	private float speed = 1f;
+	private float m_Speed = 1f;
 
 	void Awake ()
 	{
@@ -24,6 +24,6 @@ public class CharacterMotor : MonoBehaviour
 	void FixedUpdate ()
 	{
 		// we assume move intention coordinates are 0/1 are in old school games using D-pad
-		rigidbody2d.velocity = speed * characterControl.moveIntention;
+		rigidbody2d.velocity = m_Speed * characterControl.MoveIntention;
 	}
 }
