@@ -280,6 +280,14 @@
             "id": "d70b5974-b1d5-49da-b666-d7f987771c09",
             "actions": [
                 {
+                    "name": "Join",
+                    "type": "Button",
+                    "id": "8ade27f8-6dbb-4d96-a37c-0ec29ce4eb3e",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
                     "name": "Navigate",
                     "type": "Value",
                     "id": "5f0e70d3-0129-4f69-b2f3-1d2490852918",
@@ -773,6 +781,17 @@
                     "processors": "",
                     "groups": "XR",
                     "action": "TrackedDeviceSelect",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b5a5b5fe-11ec-4368-9069-c38eaddffb22",
+                    "path": "<Gamepad>/start",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "Join",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
