@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: ANIMOCTRL_SwitchBlock_Green
+  m_Controller: {fileID: 9100000, guid: fd4872f2027ba42deaac9fa744d4ef5e, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 553ec15b25499440080e3dd920bbeb98, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 5ad05d93a692e41fb81d75d648b9db0e, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: b58cfed3676da48b8bc2c7375822fb9e, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 06b74a118d4be46ea890cf7deb9d0d67, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 8176a1a92d39f4dd79819e0b2b113a8b, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 8d847a171393e4e168276f71e566db89, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: b8b2aeb3872224e7a92ad5261a9fe59d, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 8c80613a25a0847cc8774e4864f01d0c, type: 2}
