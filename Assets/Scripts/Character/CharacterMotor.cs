@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 using CommonsHelper;
+using UnityEngine.Serialization;
 
 [RequireComponent(typeof(Rigidbody2D))]
 public class CharacterMotor : MonoBehaviour
@@ -12,8 +13,8 @@ public class CharacterMotor : MonoBehaviour
 	private CharacterControl characterControl;
 	
 	/* Parameters */
-	[SerializeField, Tooltip("Character speed")]
-	private float m_Speed = 1f;
+	[FormerlySerializedAs("m_Speed")] [SerializeField, Tooltip("Character speed")]
+	private float speed = 1f;
 
 	void Awake ()
 	{
@@ -24,6 +25,6 @@ public class CharacterMotor : MonoBehaviour
 	void FixedUpdate ()
 	{
 		// we assume move intention coordinates are 0/1 are in old school games using D-pad
-		rigidbody2d.velocity = m_Speed * characterControl.MoveIntention;
+		rigidbody2d.velocity = speed * characterControl.MoveIntention;
 	}
 }
