@@ -35,11 +35,7 @@ public class SwitchBlockManager : SingletonManager<SwitchBlockManager> {
 
 	/// The current active color (designates grounded switch blocks)
 	private GameColor m_ActiveColor;
-	public GameColor ActiveColor {
-		get {
-			return m_ActiveColor;
-		}
-	}
+	public GameColor ActiveColor => m_ActiveColor;
 
 	/// Decreasing timer variable to prevent successive active color changes in sec (when 0, color can change)
 	private float m_TimeRemainingWithoutColorSwitch;
@@ -55,22 +51,22 @@ public class SwitchBlockManager : SingletonManager<SwitchBlockManager> {
 		}
 	}
 
-	void Start () {
+	private void Start () {
 		// We will progressively stop calling Setup from Start by default, for more control.
 		if (debug_SetupOnStart)
 			Setup();
 	}
 
-	public void Reset () {
+	private void Reset () {
 		Clear();
 		Setup();
 	}
 
-	public void Clear () {
+	private void Clear () {
 
 	}
 
-	public void Setup () {
+	private void Setup () {
 		// immediately switch to the initial color
 		// this means there will be animations for blocks moving from the default state
 		// and players will not be able to switch blocks before some time after this has been called
@@ -93,8 +89,7 @@ public class SwitchBlockManager : SingletonManager<SwitchBlockManager> {
 		m_SwitchBlocksDict[switchBlock.Color].Add(switchBlock);
 	}
 
-	// Update is called once per frame
-	private void SwitchActiveColor (GameColor newActiveColor) {
+	public void SwitchActiveColor (GameColor newActiveColor) {
 
 		Debug.LogFormat("Switch color action triggered for: {0}", newActiveColor);
 

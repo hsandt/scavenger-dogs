@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 
 using CommonsHelper;
-using UnityEngine.Serialization;
 
 [RequireComponent(typeof(Rigidbody2D))]
 public class CharacterMotor : MonoBehaviour
@@ -13,7 +12,7 @@ public class CharacterMotor : MonoBehaviour
 	private CharacterControl characterControl;
 	
 	/* Parameters */
-	[FormerlySerializedAs("m_Speed")] [SerializeField, Tooltip("Character speed")]
+	[SerializeField, Tooltip("Character speed")]
 	private float speed = 1f;
 
 	void Awake ()
