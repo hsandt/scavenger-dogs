@@ -10,6 +10,7 @@ public class SwitchBlock : MonoBehaviour {
 	
 	/* Sibling components */
 	private Animator animator;
+	private Collider2D collider2d;
 
 	/* Parameters */
 	[SerializeField, Tooltip("Game Color")]
@@ -21,6 +22,11 @@ public class SwitchBlock : MonoBehaviour {
 
 	private void Awake () {
 		animator = this.GetComponentOrFail<Animator>();
+		collider2d = this.GetComponentOrFail<Collider2D>();
+		
+		m_State = SwitchBlockState.Ground;
+		// must be done before SwitchBlockManager.Setup as it may call OnSwitchActiveColor back
+		collider2d.enabled = false;
 	}
 
 	private void Start () {
@@ -32,7 +38,7 @@ public class SwitchBlock : MonoBehaviour {
 	}
 
 	private void Setup() {
-		m_State = SwitchBlockState.Ground;
+
 	}
 
 	private void OnEnable () {
@@ -53,8 +59,9 @@ public class SwitchBlock : MonoBehaviour {
 		bool wasActive = animator.GetBool(AnimHash_Active);
 		bool shouldBeActive = color == newActiveColor;
 		if (wasActive ^ shouldBeActive) {
+			// the current state of the block is not was it should be, update it with collider and animation
 			m_State = shouldBeActive ? SwitchBlockState.Ground : SwitchBlockState.Wall;
-			// the current state of the block is not was it should be, update it
+			collider2d.enabled = !shouldBeActive;
 			animator.SetBool(AnimHash_Active, shouldBeActive);
 		}
 	}

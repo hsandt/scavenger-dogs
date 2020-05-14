@@ -131,6 +131,7 @@ public class SwitchBlockManager : SingletonManager<SwitchBlockManager> {
 		}
 
 	}
+	
 	public void Pause () {
 		if (audioSource.isPlaying) {
 			audioSource.Pause();
