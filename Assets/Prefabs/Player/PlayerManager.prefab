@@ -71,6 +71,22 @@ MonoBehaviour:
         m_Groups: 
         m_Action: Join
         m_Flags: 0
+      - m_Name: 
+        m_Id: d7ab5cc5-fc25-4ede-ba5d-9bf40c5a322a
+        m_Path: <Keyboard>/space
+        m_Interactions: 
+        m_Processors: 
+        m_Groups: 
+        m_Action: Join
+        m_Flags: 0
+      - m_Name: 
+        m_Id: 275ecb0e-361c-48bb-8c48-c98dd2dea929
+        m_Path: <Keyboard>/enter
+        m_Interactions: 
+        m_Processors: 
+        m_Groups: 
+        m_Action: Join
+        m_Flags: 0
     m_Reference: {fileID: 718119267933718128, guid: e34a9bddb609985668ec2adc0afafffb,
       type: 3}
   m_PlayerPrefab: {fileID: 7218455674452368295, guid: 86cbb1f3b8748a4bd9126e91bdce1c17,
