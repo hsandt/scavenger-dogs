@@ -43,18 +43,27 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: 95d8a6c7401e51bc9b6e8666587aac6a, type: 3}
-    totalSpriteSurfaceArea: 2304
+    - {fileID: 102900000, guid: ebf98285217a57cc8b96c59367ac37a0, type: 3}
+    totalSpriteSurfaceArea: 6400
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
   - {fileID: 21300000, guid: 588d5c14bf0c841be82b3d8fb4361c4f, type: 3}
   - {fileID: 21300000, guid: 1cc67094ff78f45a69bf2e11fc8e1eba, type: 3}
+  - {fileID: 21300000, guid: bf2042b4e9cb247fdbe504b00b8cd428, type: 3}
   - {fileID: 21300000, guid: 70ef29fa1af2f4249b61c8a697447619, type: 3}
   - {fileID: 21300000, guid: 55466f2cc18a1439cb198321a82226cc, type: 3}
+  - {fileID: 21300000, guid: 34481cddb66f14ea89caa4499949888a, type: 3}
+  - {fileID: 21300000, guid: 9a8c123f72e6d40e3947ae173f998ee8, type: 3}
+  - {fileID: 21300000, guid: 1ed3eb9f5e92e4114b4b2d33f7feaeb5, type: 3}
   m_PackedSpriteNamesToIndex:
   - SPR_Character_Green_v1
   - SPR_Character_Red_v1
+  - SPR_Scrap_Blue_v1
   - SPR_Character_Yellow_v1
   - SPR_Character_Blue_v1
+  - SPR_Scrap_Red_v1
+  - SPR_Scrap_Yellow_v1
+  - SPR_Scrap_Green_v1
   m_Tag: SPRATL_CharactersAndItems
   m_IsVariant: 0
