@@ -1,7 +1,12 @@
-namespace FX
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+// TODO: make IPooledObject
+public class FXPick : MonoBehaviour
 {
-    public class FXPick
+    public void DestroySelf()
     {
-        
+        Destroy(gameObject);
     }
 }

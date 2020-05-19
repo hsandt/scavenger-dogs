@@ -15,7 +15,7 @@ TagManager:
   - 
   - Character
   - Wall
-  - 
+  - Item
   - 
   - 
   - 
@@ -52,4 +52,7 @@ TagManager:
     locked: 0
   - name: Character
     uniqueID: 4099275841
+    locked: 0
+  - name: FX
+    uniqueID: 730812767
     locked: 0

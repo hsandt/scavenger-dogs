@@ -6,7 +6,7 @@ SpriteAtlas:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: SPRATL_CharactersAndItems
+  m_Name: SPRATL_CharactersItemsFX
   m_EditorData:
     serializedVersion: 2
     textureSettings:
@@ -44,13 +44,20 @@ SpriteAtlas:
     packables:
     - {fileID: 102900000, guid: 95d8a6c7401e51bc9b6e8666587aac6a, type: 3}
     - {fileID: 102900000, guid: ebf98285217a57cc8b96c59367ac37a0, type: 3}
-    totalSpriteSurfaceArea: 6400
+    - {fileID: 102900000, guid: c1395f925edc09d2fb0444a1c558db5a, type: 3}
+    totalSpriteSurfaceArea: 12544
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
   - {fileID: 21300000, guid: 588d5c14bf0c841be82b3d8fb4361c4f, type: 3}
   - {fileID: 21300000, guid: 1cc67094ff78f45a69bf2e11fc8e1eba, type: 3}
   - {fileID: 21300000, guid: bf2042b4e9cb247fdbe504b00b8cd428, type: 3}
+  - {fileID: 21300000, guid: 93c94417e609f4884bbaf27fad16e91f, type: 3}
+  - {fileID: 21300002, guid: 93c94417e609f4884bbaf27fad16e91f, type: 3}
+  - {fileID: 21300004, guid: 93c94417e609f4884bbaf27fad16e91f, type: 3}
+  - {fileID: 21300006, guid: 93c94417e609f4884bbaf27fad16e91f, type: 3}
+  - {fileID: 21300008, guid: 93c94417e609f4884bbaf27fad16e91f, type: 3}
+  - {fileID: 21300010, guid: 93c94417e609f4884bbaf27fad16e91f, type: 3}
   - {fileID: 21300000, guid: 70ef29fa1af2f4249b61c8a697447619, type: 3}
   - {fileID: 21300000, guid: 55466f2cc18a1439cb198321a82226cc, type: 3}
   - {fileID: 21300000, guid: 34481cddb66f14ea89caa4499949888a, type: 3}
@@ -60,10 +67,16 @@ SpriteAtlas:
   - SPR_Character_Green_v1
   - SPR_Character_Red_v1
   - SPR_Scrap_Blue_v1
+  - pick_up_spritesheet_0
+  - pick_up_spritesheet_1
+  - pick_up_spritesheet_2
+  - pick_up_spritesheet_3
+  - pick_up_spritesheet_4
+  - pick_up_spritesheet_5
   - SPR_Character_Yellow_v1
   - SPR_Character_Blue_v1
   - SPR_Scrap_Red_v1
   - SPR_Scrap_Yellow_v1
   - SPR_Scrap_Green_v1
-  m_Tag: SPRATL_CharactersAndItems
+  m_Tag: SPRATL_CharactersItemsFX
   m_IsVariant: 0

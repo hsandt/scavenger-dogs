@@ -7,18 +7,18 @@ public class CharacterSwitchColor : MonoBehaviour {
 
 	/* Sibling components */
 	
-	private CharacterMaster characterMaster;
-	private CharacterControl characterControl;
+	private CharacterMaster master;
+	private CharacterControl control;
 	
 	void Awake () {
-		characterMaster = this.GetComponentOrFail<CharacterMaster>();
-		characterControl = this.GetComponentOrFail<CharacterControl>();
+		master = this.GetComponentOrFail<CharacterMaster>();
+		control = this.GetComponentOrFail<CharacterControl>();
 	}
 
 	void FixedUpdate () {
 		// TODO: add a priority system in case several players activate their color at the same time (if 3+ players)
-		if (characterControl.ConsumeSwitchColorIntention()) {
-			SwitchBlockManager.Instance.SwitchActiveColor(characterMaster.Color);
+		if (control.ConsumeSwitchColorIntention()) {
+			SwitchBlockManager.Instance.SwitchActiveColor(master.Color);
 		}
 	}
 
