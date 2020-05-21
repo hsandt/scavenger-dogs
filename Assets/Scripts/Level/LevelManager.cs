@@ -95,7 +95,7 @@ public class LevelManager : SingletonManager<LevelManager> {
 			Debug.LogWarning("Cannot register KeySpawnPoint with Color: None.", spawnPoint.gameObject);
 			return;
 		}
-		Debug.LogFormat("Registering {0} for scrap {1} - {2}", spawnPoint, color);
+		Debug.LogFormat("Registering {0} for scrap {1}", spawnPoint, color);
 		scrapSpawnPoints[color].Add(spawnPoint);
 	}
 

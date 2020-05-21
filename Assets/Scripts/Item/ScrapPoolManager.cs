@@ -7,8 +7,6 @@ using CommonsPattern;
 public class ScrapPoolManager : MultiPoolManager<Scrap, ScrapPoolManager>  {
 
 	void Awake () {
-		// FIXME: very weird, the Init gets interrupted by the LevelManager Start, always after generating Pool
-		// for Scrap Blue only. Seems like an exception is thrown.
 		Init();
 	}
 
