@@ -45,37 +45,76 @@ SpriteAtlas:
     - {fileID: 102900000, guid: 95d8a6c7401e51bc9b6e8666587aac6a, type: 3}
     - {fileID: 102900000, guid: ebf98285217a57cc8b96c59367ac37a0, type: 3}
     - {fileID: 102900000, guid: c1395f925edc09d2fb0444a1c558db5a, type: 3}
-    totalSpriteSurfaceArea: 12544
+    - {fileID: 102900000, guid: 069a3dc0a1e8dd96581c848badf8e422, type: 3}
+    totalSpriteSurfaceArea: 32000
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
+  - {fileID: -85960418534164572, guid: e0a338806c68267dc8d2e7f974027330, type: 3}
+  - {fileID: -6489636239870069321, guid: e0a338806c68267dc8d2e7f974027330, type: 3}
+  - {fileID: -1078557969367663450, guid: e0a338806c68267dc8d2e7f974027330, type: 3}
+  - {fileID: -4057798067380213174, guid: e0a338806c68267dc8d2e7f974027330, type: 3}
+  - {fileID: 21300000, guid: 56935721b59d2e1d6aa989fbac0a7150, type: 3}
   - {fileID: 21300000, guid: 588d5c14bf0c841be82b3d8fb4361c4f, type: 3}
   - {fileID: 21300000, guid: 1cc67094ff78f45a69bf2e11fc8e1eba, type: 3}
   - {fileID: 21300000, guid: bf2042b4e9cb247fdbe504b00b8cd428, type: 3}
-  - {fileID: 21300000, guid: 93c94417e609f4884bbaf27fad16e91f, type: 3}
-  - {fileID: 21300002, guid: 93c94417e609f4884bbaf27fad16e91f, type: 3}
-  - {fileID: 21300004, guid: 93c94417e609f4884bbaf27fad16e91f, type: 3}
-  - {fileID: 21300006, guid: 93c94417e609f4884bbaf27fad16e91f, type: 3}
-  - {fileID: 21300008, guid: 93c94417e609f4884bbaf27fad16e91f, type: 3}
-  - {fileID: 21300010, guid: 93c94417e609f4884bbaf27fad16e91f, type: 3}
+  - {fileID: 21300000, guid: 68720426a711e786891e82cd6abfeab8, type: 3}
+  - {fileID: -4629448027048413555, guid: 93c94417e609f4884bbaf27fad16e91f, type: 3}
+  - {fileID: 1862679850713574701, guid: 93c94417e609f4884bbaf27fad16e91f, type: 3}
+  - {fileID: -8312885517878111343, guid: 93c94417e609f4884bbaf27fad16e91f, type: 3}
+  - {fileID: 3738357163619352644, guid: 93c94417e609f4884bbaf27fad16e91f, type: 3}
+  - {fileID: 6110495347109416867, guid: 93c94417e609f4884bbaf27fad16e91f, type: 3}
+  - {fileID: -7667748563688752965, guid: 93c94417e609f4884bbaf27fad16e91f, type: 3}
+  - {fileID: 6268451228271309579, guid: baca0249abed1c402bf8b986ba88493f, type: 3}
+  - {fileID: -5912365667419909035, guid: baca0249abed1c402bf8b986ba88493f, type: 3}
+  - {fileID: 8417428223148508559, guid: baca0249abed1c402bf8b986ba88493f, type: 3}
+  - {fileID: -1876904123812498880, guid: baca0249abed1c402bf8b986ba88493f, type: 3}
   - {fileID: 21300000, guid: 70ef29fa1af2f4249b61c8a697447619, type: 3}
+  - {fileID: -6090037720154078091, guid: c1f021eb4813df977bfddc2041e346ab, type: 3}
+  - {fileID: -8233092071753172950, guid: c1f021eb4813df977bfddc2041e346ab, type: 3}
+  - {fileID: 8470431535614006198, guid: c1f021eb4813df977bfddc2041e346ab, type: 3}
+  - {fileID: 2146237910271939346, guid: c1f021eb4813df977bfddc2041e346ab, type: 3}
   - {fileID: 21300000, guid: 55466f2cc18a1439cb198321a82226cc, type: 3}
   - {fileID: 21300000, guid: 34481cddb66f14ea89caa4499949888a, type: 3}
+  - {fileID: 21300000, guid: 4090d03e4107108ea976d58036a174c9, type: 3}
+  - {fileID: -4746306032300555083, guid: 24181b8efe8acd07d85a56bec800ae71, type: 3}
+  - {fileID: -4730699537426765069, guid: 24181b8efe8acd07d85a56bec800ae71, type: 3}
+  - {fileID: -4414583471909428601, guid: 24181b8efe8acd07d85a56bec800ae71, type: 3}
+  - {fileID: -1085676849951974615, guid: 24181b8efe8acd07d85a56bec800ae71, type: 3}
   - {fileID: 21300000, guid: 9a8c123f72e6d40e3947ae173f998ee8, type: 3}
   - {fileID: 21300000, guid: 1ed3eb9f5e92e4114b4b2d33f7feaeb5, type: 3}
   m_PackedSpriteNamesToIndex:
+  - SPRSH_SwitchBlock_Blue_v1_3
+  - SPRSH_SwitchBlock_Blue_v1_2
+  - SPRSH_SwitchBlock_Blue_v1_1
+  - SPRSH_SwitchBlock_Blue_v1_0
+  - SPR_Floor_v1
   - SPR_Character_Green_v1
   - SPR_Character_Red_v1
   - SPR_Scrap_Blue_v1
-  - pick_up_spritesheet_0
-  - pick_up_spritesheet_1
-  - pick_up_spritesheet_2
-  - pick_up_spritesheet_3
-  - pick_up_spritesheet_4
-  - pick_up_spritesheet_5
+  - SPR_Warper_v1
+  - SPRSH_FX_Pick_3
+  - SPRSH_FX_Pick_2
+  - SPRSH_FX_Pick_1
+  - SPRSH_FX_Pick_0
+  - SPRSH_FX_Pick_5
+  - SPRSH_FX_Pick_4
+  - SPRSH_SwitchBlock_Red_v1_0
+  - SPRSH_SwitchBlock_Red_v1_1
+  - SPRSH_SwitchBlock_Red_v1_2
+  - SPRSH_SwitchBlock_Red_v1_3
   - SPR_Character_Yellow_v1
+  - SPRSH_SwitchBlock_Green_v1_0
+  - SPRSH_SwitchBlock_Green_v1_1
+  - SPRSH_SwitchBlock_Green_v1_2
+  - SPRSH_SwitchBlock_Green_v1_3
   - SPR_Character_Blue_v1
   - SPR_Scrap_Red_v1
+  - SPR_Wall_v1
+  - SPRSH_SwitchBlock_Yellow_v1_3
+  - SPRSH_SwitchBlock_Yellow_v1_2
+  - SPRSH_SwitchBlock_Yellow_v1_1
+  - SPRSH_SwitchBlock_Yellow_v1_0
   - SPR_Scrap_Yellow_v1
   - SPR_Scrap_Green_v1
   m_Tag: SPRATL_CharactersItemsFX

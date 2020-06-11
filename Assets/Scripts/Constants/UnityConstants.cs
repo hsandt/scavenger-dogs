@@ -32,6 +32,10 @@ namespace UnityConstants
         /// Name of tag 'GameController'.
         /// </summary>
         public const string GameController = "GameController";
+        /// <summary>
+        /// Name of tag 'CharacterParent'.
+        /// </summary>
+        public const string CharacterParent = "CharacterParent";
     }
 
     public static class SortingLayers
@@ -49,6 +53,10 @@ namespace UnityConstants
         /// </summary>
         public const int Wall = -1899054025;
         /// <summary>
+        /// ID of sorting layer 'Device'.
+        /// </summary>
+        public const int Device = -1768614227;
+        /// <summary>
         /// ID of sorting layer 'Item'.
         /// </summary>
         public const int Item = 1392412937;
@@ -56,6 +64,10 @@ namespace UnityConstants
         /// ID of sorting layer 'Character'.
         /// </summary>
         public const int Character = -195691455;
+        /// <summary>
+        /// ID of sorting layer 'FX'.
+        /// </summary>
+        public const int FX = 730812767;
     }
 
     public static class Layers
@@ -88,6 +100,10 @@ namespace UnityConstants
         /// Index of layer 'Wall'.
         /// </summary>
         public const int Wall = 9;
+        /// <summary>
+        /// Index of layer 'Item'.
+        /// </summary>
+        public const int Item = 10;
 
         /// <summary>
         /// Bitmask of layer 'Default'.
@@ -117,6 +133,10 @@ namespace UnityConstants
         /// Bitmask of layer 'Wall'.
         /// </summary>
         public const int WallMask = 1 << 9;
+        /// <summary>
+        /// Bitmask of layer 'Item'.
+        /// </summary>
+        public const int ItemMask = 1 << 10;
     }
 
     public static class Scenes
@@ -125,6 +145,10 @@ namespace UnityConstants
         /// ID of scene 'SampleScene'.
         /// </summary>
         public const int SampleScene = 0;
+        /// <summary>
+        /// ID of scene 'ScoreScreen'.
+        /// </summary>
+        public const int ScoreScreen = 1;
     }
 
     public static class Axes

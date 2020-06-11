@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - CharacterParent
   layers:
   - Default
   - TransparentFX
@@ -16,7 +17,7 @@ TagManager:
   - Character
   - Wall
   - Item
-  - 
+  - Device
   - 
   - 
   - 
@@ -46,6 +47,9 @@ TagManager:
     locked: 0
   - name: Wall
     uniqueID: 2395913271
+    locked: 0
+  - name: Device
+    uniqueID: 2526353069
     locked: 0
   - name: Item
     uniqueID: 1392412937

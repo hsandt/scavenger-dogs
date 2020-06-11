@@ -17,9 +17,15 @@ public class CharacterControl : MonoBehaviour
     private Vector2 m_MoveIntention = Vector2.zero;
     public Vector2 MoveIntention => m_MoveIntention;
     
-    private bool m_SwitchColorIntention = false;
+    private bool m_SwitchColorIntention;
     public bool SwitchColorIntention => m_SwitchColorIntention;
 
+    /// Player can control character only when this is true
+    private bool m_CanControl;
+    
+    /// Timer for control stop
+    private float m_TimeRemainingWithoutControl;
+    
     private void Start()
     {
         Setup();
@@ -28,6 +34,9 @@ public class CharacterControl : MonoBehaviour
     private void Setup()
     {
         m_MoveIntention = Vector2.zero;
+        m_SwitchColorIntention = false;
+        m_CanControl = true;
+        m_TimeRemainingWithoutControl = 0f;
     }
 
     private void OnEnable()
@@ -39,7 +48,7 @@ public class CharacterControl : MonoBehaviour
     {
         UnsubscribeInputEvent();
     }
-
+    
     public void SetPlayer(Player newPlayer)
     {
         // clean up event binding for any previous player
@@ -89,5 +98,47 @@ public class CharacterControl : MonoBehaviour
     public bool ConsumeSwitchColorIntention()
     {
         return ControlUtil.ConsumeBool(ref m_SwitchColorIntention);
+    }
+    
+    /// Enable control (only call when this component is enabled to avoid double SubscribeInputEvent)
+    public void StartControl() {
+        if (m_CanControl)
+        {
+            Debug.LogAssertionFormat(this, "Player can already control {0}, cannot Start Control again.", this);
+            return;
+        }
+        
+        m_CanControl = true; // set control variable to enable input processing
+
+        SubscribeInputEvent();
+    }
+
+    /// Disable control until StartControl is called
+    public void StopControl() {
+        if (!m_CanControl)
+        {
+            Debug.LogAssertionFormat(this, "Player cannot control {0} yet, cannot Stop Control again.", this);
+            return;
+        }
+        
+        // call the duration version of this method, with 0 to mean "permanent stop"
+        StopControlForDuration(0);
+    }
+
+    /// Temporarily disable control for the given duration
+    /// a null or negative duration stands for a permanent stop, as there will be no further countdown
+    /// (only call when this component is enabled to avoid double UnsubscribeInputEvent)
+    public void StopControlForDuration(float duration) {
+        // reset all intentions in case the motor is still active
+        m_MoveIntention = Vector2.zero;
+        m_SwitchColorIntention = false;
+        // enabled = false; // disable the script to stop updating the velocity
+        
+        // unsubscribe from all input events to prevent further control
+        UnsubscribeInputEvent();
+
+        // Debug.Log("disabling control in StopControl");
+        m_CanControl = false; // set control variable to disable input processing
+        m_TimeRemainingWithoutControl = duration;
     }
 }

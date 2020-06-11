@@ -105,6 +105,12 @@ public class CharacterPick : MonoBehaviour {
 	// increment the number of keys in hand
 	void IncrementNbKeys () {
 		nbKeys ++;
+		
+		// when one character got all keys, make warper appear
+		if (HasAllKeys())
+		{
+			WarperManager.Instance.TryMakeWarperAppear();
+		}
 	}
 
 }

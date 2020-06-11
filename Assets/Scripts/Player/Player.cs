@@ -24,7 +24,8 @@ public class Player : MonoBehaviour
         Debug.LogFormat("Player {0} joined, spawning corresponding character", playerIndex + 1);
         
         // spawn character and associate this Player
-        GameObject character = Instantiate(charactersData.characterPrefabs[playerIndex], Vector3.zero, Quaternion.identity);
+//        GameObject character = Instantiate(charactersData.characterPrefabs[playerIndex], Vector3.zero, Quaternion.identity);
+        GameObject character = CharacterManager.Instance.SpawnCharacter(playerIndex + 1, allowControl: true);
         var characterControl = character.GetComponentOrFail<CharacterControl>();
         characterControl.SetPlayer(this);
     }
