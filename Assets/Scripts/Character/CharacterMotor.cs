@@ -13,7 +13,7 @@ public class CharacterMotor : MonoBehaviour
 	
 	/* Parameters */
 	[SerializeField, Tooltip("Character speed")]
-	private float speed = 1f;
+	private float speed = 3f;
 
 	void Awake ()
 	{
