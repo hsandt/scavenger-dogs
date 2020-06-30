@@ -1,3 +1,5 @@
+//#define DEBUG_WARPER_MANAGER
+
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
@@ -34,7 +36,9 @@ public class WarperManager : SingletonManager<WarperManager> {
 	}
 
 	public void RegisterWarper(Warper warper) {
+#if DEBUG_WARPER_MANAGER
 		Debug.LogFormat("Registering {0}", warper);
+#endif
 		this.warper = warper;
 	}
 

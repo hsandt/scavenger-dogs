@@ -1,4 +1,6 @@
-﻿using System;
+﻿//#define DEBUG_LEVEL_MANAGER
+
+using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Collections;
@@ -95,7 +97,9 @@ public class LevelManager : SingletonManager<LevelManager> {
 			Debug.LogWarning("Cannot register KeySpawnPoint with Color: None.", spawnPoint.gameObject);
 			return;
 		}
+#if DEBUG_LEVEL_MANAGER
 		Debug.LogFormat("Registering {0} for scrap {1}", spawnPoint, color);
+#endif
 		scrapSpawnPoints[color].Add(spawnPoint);
 	}
 
@@ -112,7 +116,9 @@ public class LevelManager : SingletonManager<LevelManager> {
 		}
 		// increment number of keys to pick for that color
 		LevelManager.Instance.requiredNbScrapsPerColorDict[color] ++;
+#if DEBUG_LEVEL_MANAGER
 		Debug.LogFormat("Registering key {0} #{1}", color, LevelManager.Instance.requiredNbScrapsPerColorDict[color]);
+#endif
 		return scrap;
 	}
 
@@ -120,7 +126,9 @@ public class LevelManager : SingletonManager<LevelManager> {
 		// IMPROVE: instead of always playing with the same avatars/colors in order, allow playing with specific colors since their powers will differ
 		//	in later versions
 		// int playerNb = SessionManager.Instance.playerNb;
+#if DEBUG_LEVEL_MANAGER
 		Debug.Log("SpawnAllScraps");
+#endif
 		int playerNb = 4;
 		for (int i = 0; i < playerNb; ++i) {
 			int playerNo = i + 1;

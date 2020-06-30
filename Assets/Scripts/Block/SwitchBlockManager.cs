@@ -1,3 +1,5 @@
+//#define SWITCH_BLOCK_MANAGER
+
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
@@ -71,7 +73,9 @@ public class SwitchBlockManager : SingletonManager<SwitchBlockManager> {
 		// this means there will be animations for blocks moving from the default state
 		// and players will not be able to switch blocks before some time after this has been called
 		// in practice, the Start message is longer than the delay between two switches so it does not matter
+#if SWITCH_BLOCK_MANAGER
 		Debug.Log("(SwitchBlockManager) Activating initial color");
+#endif
 		m_ActiveColor = GameColor.None;
 		m_TimeRemainingWithoutColorSwitch = 0f;
 		m_WasAudioSourcePlaying = false;
@@ -81,8 +85,10 @@ public class SwitchBlockManager : SingletonManager<SwitchBlockManager> {
 
 	public void RegisterSwitchBlock(SwitchBlock switchBlock) {
 		if (switchBlock.Color == GameColor.None) {
+#if SWITCH_BLOCK_MANAGER
 			Debug.LogFormat(switchBlock, "Switch Block {0} has color None, cannot be registered by SwitchBlockManager.",
 				switchBlock);
+#endif
 			return;
 		}
 		
@@ -90,19 +96,24 @@ public class SwitchBlockManager : SingletonManager<SwitchBlockManager> {
 	}
 
 	public void SwitchActiveColor (GameColor newActiveColor) {
-
+#if SWITCH_BLOCK_MANAGER
 		Debug.LogFormat("Switch color action triggered for: {0}", newActiveColor);
+#endif
 
 		// don't mind switching the active color if it is already the one you want
 		// for the initialization we start from the None color so it will never be true
 		if (m_ActiveColor == newActiveColor) {
+#if SWITCH_BLOCK_MANAGER
 			Debug.Log("... but the wanted color is already active!");
+#endif
 			return;
 		}
 
 		// don't switch to the new active color if the last color change is too recent
 		if (m_TimeRemainingWithoutColorSwitch > 0) {
+#if SWITCH_BLOCK_MANAGER
 			Debug.Log("... but color switch is still in cooldown!");
+#endif
 			return;
 		}
 
