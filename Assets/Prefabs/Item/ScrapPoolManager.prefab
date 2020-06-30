@@ -45,4 +45,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   poolTransform: {fileID: 0}
   resourcePrefabsPath: Item
-  poolSize: 20
+  poolSize: 4
