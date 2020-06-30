@@ -281,8 +281,8 @@ GameObject:
   m_Component:
   - component: {fileID: 227883786}
   m_Layer: 0
-  m_Name: _ScrapPool
-  m_TagString: Untagged
+  m_Name: _Scraps
+  m_TagString: ScrapParent
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6196,11 +6196,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: ScrapPoolManager
       objectReference: {fileID: 0}
-    - target: {fileID: 8052739937579779289, guid: 5f90ff618a8b8ff1fafd44be67319dd2,
-        type: 3}
-      propertyPath: poolTransform
-      value: 
-      objectReference: {fileID: 227883786}
     - target: {fileID: 8052739937579779294, guid: 5f90ff618a8b8ff1fafd44be67319dd2,
         type: 3}
       propertyPath: m_LocalPosition.x

@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - CharacterParent
+  - ScrapParent
   layers:
   - Default
   - TransparentFX

@@ -36,6 +36,10 @@ namespace UnityConstants
         /// Name of tag 'CharacterParent'.
         /// </summary>
         public const string CharacterParent = "CharacterParent";
+        /// <summary>
+        /// Name of tag 'ScrapParent'.
+        /// </summary>
+        public const string ScrapParent = "ScrapParent";
     }
 
     public static class SortingLayers
@@ -104,6 +108,10 @@ namespace UnityConstants
         /// Index of layer 'Item'.
         /// </summary>
         public const int Item = 10;
+        /// <summary>
+        /// Index of layer 'Device'.
+        /// </summary>
+        public const int Device = 11;
 
         /// <summary>
         /// Bitmask of layer 'Default'.
@@ -137,6 +145,10 @@ namespace UnityConstants
         /// Bitmask of layer 'Item'.
         /// </summary>
         public const int ItemMask = 1 << 10;
+        /// <summary>
+        /// Bitmask of layer 'Device'.
+        /// </summary>
+        public const int DeviceMask = 1 << 11;
     }
 
     public static class Scenes
