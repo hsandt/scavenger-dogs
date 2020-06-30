@@ -39,7 +39,7 @@ SpriteAtlas:
       blockOffset: 1
       allowAlphaSplitting: 0
       enableRotation: 1
-      enableTightPacking: 0
+      enableTightPacking: 1
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: 95d8a6c7401e51bc9b6e8666587aac6a, type: 3}
