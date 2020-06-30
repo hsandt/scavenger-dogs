@@ -6,7 +6,6 @@ using System.Collections.Generic;
 
 using CommonsHelper;
 using CommonsPattern;
-using UnityEngine.Serialization;
 
 public class SwitchBlockManager : SingletonManager<SwitchBlockManager> {
 
