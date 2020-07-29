@@ -25,8 +25,8 @@ public class LevelManager : SingletonManager<LevelManager> {
 	bool generateOnStart = true;  // generate level on start
 	[SerializeField]
 	bool generateFromScene = true;  // generate level from scene instead of TXT file
-	[SerializeField]
-	bool spawnScrapsOnStart = true;
+	[SerializeField, Tooltip("Useful for debug, set to false when Session Manager is present")]
+	bool spawnScrapsOnStart = false;
 
 	[SerializeField]
 	ScrapPoolManager scrapPoolManager = null;  // scrap multi-pool manager (only LevelManager has direct access to it)
@@ -58,19 +58,6 @@ public class LevelManager : SingletonManager<LevelManager> {
 			// spawn all keys
 			LevelManager.Instance.SpawnAllScraps();
 		}
-	}
-
-	/* Generate a game level with PCG */
-	public void GenerateLevel (int stageIdx) {
-		/* add PCG here */
-		// build the grid
-		// if (generateOnStart) {
-			if (generateFromScene) {
-				SceneManager.LoadScene(stageSceneIndices[stageIdx], LoadSceneMode.Additive);
-				// TODO: also update grid, by reading the tilemap content
-				// grid.BuildWithStagePrefab(stagePrefab);
-			}
-		// }
 	}
 
 	/* Clear the game level */

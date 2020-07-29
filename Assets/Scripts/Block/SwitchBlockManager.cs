@@ -63,11 +63,11 @@ public class SwitchBlockManager : SingletonManager<SwitchBlockManager> {
 		Setup();
 	}
 
-	private void Clear () {
+	public void Clear () {
 
 	}
 
-	private void Setup () {
+	public void Setup () {
 		// immediately switch to the initial color
 		// this means there will be animations for blocks moving from the default state
 		// and players will not be able to switch blocks before some time after this has been called
