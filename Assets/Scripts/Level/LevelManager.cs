@@ -18,7 +18,7 @@ public class LevelManager : SingletonManager<LevelManager> {
 	private Dictionary<GameColor, GameObject> keyPrefabDict = new Dictionary<GameColor, GameObject>();
 
 	// array that store stage scene values
-	int[] stageSceneIndices = new int[] {Scenes.SampleScene};
+	int[] stageSceneIndices = new int[] {Scenes.Stage1};
 
 	// debug settings
 	[SerializeField]
