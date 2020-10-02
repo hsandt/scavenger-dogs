@@ -53,9 +53,11 @@ public class SwitchBlockManager : SingletonManager<SwitchBlockManager> {
 	}
 
 	private void Start () {
+#if UNITY_EDITOR
 		// We will progressively stop calling Setup from Start by default, for more control.
 		if (debug_SetupOnStart)
 			Setup();
+#endif
 	}
 
 	private void Reset () {
